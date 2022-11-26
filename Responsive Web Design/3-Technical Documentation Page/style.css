@@ -1,0 +1,41 @@
+#navbar {
+    width: 30% ;
+    margin-left: 2%;
+  }
+  #navbar ul {
+    padding: 20px 30px;
+    list-style-type: none;
+  }
+  #navbar .menu  {
+  
+    float: left;
+    max-height: none;
+  }
+
+main {
+  flex: 1;
+  overflow: auto;
+  margin-left: 2%;
+}
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.5;
+  min-width: 300px;
+  display: flex;
+}
+h2 {
+  font-family: "Vidaloka", serif;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(var(--primary-color));
+}
+@media screen and (max-width: 576px) {
+  h2 {
+  font-size: 18px;
+  }
+}

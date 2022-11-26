@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <title>registration form jryounes</title>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1 id="title" class="text-center">registration form jryounes</h1>
+    <p id="description"> please fill out this form with the reauierd information</p>
+  </body>
+  <form id="survey-form">
+    <div class="input-headings"> 
+    <div class="from-group">
+    <label id="name-label" for="name">Enter Your Name: <input type="text" id="name" name="name" type="text" placeholder="Name" class="form-input" required >
+    </div>
+  <div class="from-group">
+    <label id="email-label"  for="name">Enter Your Email: <input type="email" id="email" name="email" type="text" placeholder="Email" class="form-input" required >
+    </div>
+    <div class="from-group">
+    <label id="number-label"  for="name">Enter Your age: <input type="number" id="number" min="18" max="99" name="age" type="number" placeholder="Age" class="form-input" required >
+    </div>
+    <div class="form-group">
+          <p>Which option best describes our current relationship??</p>
+          <select id="dropdown" name="role" class="form-input"  required>
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="Friend">Friend</option>
+            <option value="Colleague">Colleague</option>
+            <option value="Family">Family</option>
+            <option value="Acquaintance">Acquaintance</option>
+            <option value="Don't know me">Don't know me</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend me to a friend?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+        <div class="form-group">
+          <p>What do you like about me?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="Sense of friendship">Sense of friendship</option>
+            <option value="Loyalty">Loyalty</option>
+            <option value="My intellect">My intellect</option>
+            <option value="My moral sense">My moral sense</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see improved about me?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label><input name="prefer" value="my sense of humor" type="checkbox" class="input-checkbox">my sense of humor</label>
+          <label>
+            <input name="prefer" value="my tolerance" type="checkbox" class="input-checkbox">my tolerance</label>
+          <label><input name="prefer" value="my vocabulary" type="checkbox" class="input-checkbox">my vocabulary</label>
+          <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges</label>
+          <label><input name="prefer" value="my style of dress" type="checkbox" class="input-checkbox">my style of dress</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+  </from>
+    </body>  
+  </html>
